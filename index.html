@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Real-Time Task Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1> Task-Manager</h1>
+<body class="bg-gray-100 min-h-screen">
+  <header class="bg-indigo-600 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-6">
+      <h1 class="text-3xl font-bold">Task Manager</h1>
+    </div>
   </header>
 
-  <main id="boards"></main>
+  <main id="boards" class="container mx-auto px-4 py-8 flex gap-6 overflow-x-auto pb-10"></main>
 
   <script src="app.js"></script>
 </body>
